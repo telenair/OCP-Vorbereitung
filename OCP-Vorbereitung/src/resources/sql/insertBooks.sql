@@ -1,0 +1,1 @@
+insert into buch (ISBN, TITEL, AUTOR, PREIS) VALUES (?,?,?,?)

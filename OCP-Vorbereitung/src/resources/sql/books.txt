@@ -1,0 +1,5 @@
+978-3-8362-2004-0;Professionell entwicklen mit Java EE 7;Alexander Salvanos;49.90
+978-3-8362-2958-6;Einstieg in Eclipse;Thomas Künneth;39.90
+978-3-492-26829-5;Die Weiße Flamme;Schwarz;10.99
+978-3-570-00960-4;Die Abgestellten;Ogger;15.90
+978-3-492-70345-1;Askir3;Schwarz;20.00
