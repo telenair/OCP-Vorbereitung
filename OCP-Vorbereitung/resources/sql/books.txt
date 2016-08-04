@@ -3,3 +3,5 @@
 978-3-492-26829-5;Die Weiße Flamme;Schwarz;10.99
 978-3-570-00960-4;Die Abgestellten;Ogger;15.90
 978-3-492-70345-1;Askir3;Schwarz;20.00
+978-3-86490-203-1;Der Weg zum Java Profi;Michael Inden;49.90
+978-3-8362-4119-9;Java ist auch eine Insel;Christian Ullenboom;49.90
