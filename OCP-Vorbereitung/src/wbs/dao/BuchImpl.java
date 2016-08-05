@@ -1,4 +1,4 @@
-package wbs.jdbc.dao;
+package wbs.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -1,4 +1,4 @@
-package wbs.jdbc.dao;
+package wbs.dao;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;

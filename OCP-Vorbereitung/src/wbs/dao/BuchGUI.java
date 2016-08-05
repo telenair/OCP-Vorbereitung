@@ -1,4 +1,4 @@
-package wbs.jdbc;
+package wbs.dao;
 
 import java.awt.EventQueue;
 

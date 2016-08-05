@@ -1,4 +1,4 @@
-package wbs.jdbc.dao;
+package wbs.dao;
 
 public class PersistenceException extends RuntimeException {
 
