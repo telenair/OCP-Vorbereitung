@@ -40,7 +40,6 @@ public class BuchGUI {
 	private JTextField textField_3;
 	private JTextField textField_4;
 	private JTextField textField_5;
-	private JTextField textField_6;
 
 	/**
 	 * Launch the application.
@@ -92,8 +91,8 @@ public class BuchGUI {
 				.addComponent(tabbedPane, GroupLayout.PREFERRED_SIZE, 441, GroupLayout.PREFERRED_SIZE)
 		);
 		
-		JInternalFrame internalFrame = new JInternalFrame("Suchen");
-		tabbedPane.addTab("Buch suchen", null, internalFrame, null);
+		JInternalFrame internalFrame = new JInternalFrame("Suchen/Löschen");
+		tabbedPane.addTab("Buch suchen/löschen", null, internalFrame, null);
 		
 		JLabel lblNewLabel = new JLabel("ISBN:");
 		
@@ -111,6 +110,8 @@ public class BuchGUI {
 		textField_2.setColumns(10);
 		
 		JButton btnSuchen = new JButton("suchen");
+		
+		JButton btnLschen = new JButton("löschen");
 		GroupLayout groupLayout_1 = new GroupLayout(internalFrame.getContentPane());
 		groupLayout_1.setHorizontalGroup(
 			groupLayout_1.createParallelGroup(Alignment.LEADING)
@@ -129,8 +130,10 @@ public class BuchGUI {
 								.addComponent(textField_2, GroupLayout.PREFERRED_SIZE, 175, GroupLayout.PREFERRED_SIZE)))
 						.addGroup(groupLayout_1.createSequentialGroup()
 							.addGap(196)
-							.addComponent(btnSuchen)))
-					.addContainerGap(59, Short.MAX_VALUE))
+							.addGroup(groupLayout_1.createParallelGroup(Alignment.LEADING)
+								.addComponent(btnLschen)
+								.addComponent(btnSuchen))))
+					.addContainerGap(44, Short.MAX_VALUE))
 		);
 		groupLayout_1.setVerticalGroup(
 			groupLayout_1.createParallelGroup(Alignment.LEADING)
@@ -149,7 +152,9 @@ public class BuchGUI {
 						.addComponent(textField_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
 					.addPreferredGap(ComponentPlacement.RELATED, 122, Short.MAX_VALUE)
 					.addComponent(btnSuchen)
-					.addGap(109))
+					.addPreferredGap(ComponentPlacement.RELATED)
+					.addComponent(btnLschen)
+					.addGap(80))
 		);
 		internalFrame.getContentPane().setLayout(groupLayout_1);
 		
@@ -213,44 +218,6 @@ public class BuchGUI {
 					.addGap(101))
 		);
 		internalFrame_1.getContentPane().setLayout(groupLayout_2);
-		
-		JInternalFrame internalFrame_2 = new JInternalFrame("Löschen");
-		tabbedPane.addTab("Buch löschen", null, internalFrame_2, null);
-		
-		JLabel lblIsbn_4 = new JLabel("ISBN:");
-		
-		textField_6 = new JTextField();
-		textField_6.setColumns(10);
-		
-		JButton btnLschen = new JButton("löschen");
-		GroupLayout groupLayout_3 = new GroupLayout(internalFrame_2.getContentPane());
-		groupLayout_3.setHorizontalGroup(
-			groupLayout_3.createParallelGroup(Alignment.LEADING)
-				.addGroup(groupLayout_3.createSequentialGroup()
-					.addGroup(groupLayout_3.createParallelGroup(Alignment.LEADING)
-						.addGroup(groupLayout_3.createSequentialGroup()
-							.addContainerGap()
-							.addComponent(lblIsbn_4)
-							.addGap(43)
-							.addComponent(textField_6, GroupLayout.PREFERRED_SIZE, 175, GroupLayout.PREFERRED_SIZE))
-						.addGroup(groupLayout_3.createSequentialGroup()
-							.addGap(189)
-							.addComponent(btnLschen)))
-					.addContainerGap(205, Short.MAX_VALUE))
-		);
-		groupLayout_3.setVerticalGroup(
-			groupLayout_3.createParallelGroup(Alignment.LEADING)
-				.addGroup(groupLayout_3.createSequentialGroup()
-					.addGap(50)
-					.addGroup(groupLayout_3.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lblIsbn_4)
-						.addComponent(textField_6, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addPreferredGap(ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
-					.addComponent(btnLschen)
-					.addGap(102))
-		);
-		internalFrame_2.getContentPane().setLayout(groupLayout_3);
-		internalFrame_2.setVisible(true);
 		internalFrame_1.setVisible(true);
 		internalFrame.setVisible(true);
 		frame.getContentPane().setLayout(groupLayout);
