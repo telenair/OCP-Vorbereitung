@@ -41,8 +41,6 @@ public class BuchGUI {
 	private JTextField textField_4;
 	private JTextField textField_5;
 	private JTextField textField_6;
-	private JTextField textField_7;
-	private JTextField textField_8;
 
 	/**
 	 * Launch the application.
@@ -219,20 +217,10 @@ public class BuchGUI {
 		JInternalFrame internalFrame_2 = new JInternalFrame("Löschen");
 		tabbedPane.addTab("Buch löschen", null, internalFrame_2, null);
 		
-		JLabel lblIsbn_4 = new JLabel("ISBN");
-		
-		JLabel lblTitel_5 = new JLabel("Titel:");
-		
-		JLabel lblAutor_6 = new JLabel("Autor:");
+		JLabel lblIsbn_4 = new JLabel("ISBN:");
 		
 		textField_6 = new JTextField();
 		textField_6.setColumns(10);
-		
-		textField_7 = new JTextField();
-		textField_7.setColumns(10);
-		
-		textField_8 = new JTextField();
-		textField_8.setColumns(10);
 		
 		JButton btnLschen = new JButton("löschen");
 		GroupLayout groupLayout_3 = new GroupLayout(internalFrame_2.getContentPane());
@@ -242,15 +230,9 @@ public class BuchGUI {
 					.addGroup(groupLayout_3.createParallelGroup(Alignment.LEADING)
 						.addGroup(groupLayout_3.createSequentialGroup()
 							.addContainerGap()
-							.addGroup(groupLayout_3.createParallelGroup(Alignment.LEADING)
-								.addComponent(lblIsbn_4)
-								.addComponent(lblTitel_5)
-								.addComponent(lblAutor_6))
-							.addGap(35)
-							.addGroup(groupLayout_3.createParallelGroup(Alignment.LEADING)
-								.addComponent(textField_7, GroupLayout.PREFERRED_SIZE, 340, GroupLayout.PREFERRED_SIZE)
-								.addComponent(textField_6, GroupLayout.PREFERRED_SIZE, 175, GroupLayout.PREFERRED_SIZE)
-								.addComponent(textField_8, GroupLayout.PREFERRED_SIZE, 175, GroupLayout.PREFERRED_SIZE)))
+							.addComponent(lblIsbn_4)
+							.addGap(43)
+							.addComponent(textField_6, GroupLayout.PREFERRED_SIZE, 175, GroupLayout.PREFERRED_SIZE))
 						.addGroup(groupLayout_3.createSequentialGroup()
 							.addGap(189)
 							.addComponent(btnLschen)))
@@ -263,18 +245,7 @@ public class BuchGUI {
 					.addGroup(groupLayout_3.createParallelGroup(Alignment.BASELINE)
 						.addComponent(lblIsbn_4)
 						.addComponent(textField_6, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
-					.addGroup(groupLayout_3.createParallelGroup(Alignment.LEADING)
-						.addGroup(groupLayout_3.createSequentialGroup()
-							.addGap(18)
-							.addComponent(lblTitel_5)
-							.addGap(18)
-							.addComponent(lblAutor_6))
-						.addGroup(groupLayout_3.createSequentialGroup()
-							.addGap(11)
-							.addComponent(textField_7, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-							.addPreferredGap(ComponentPlacement.UNRELATED)
-							.addComponent(textField_8, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)))
-					.addPreferredGap(ComponentPlacement.RELATED, 125, Short.MAX_VALUE)
+					.addPreferredGap(ComponentPlacement.RELATED, 189, Short.MAX_VALUE)
 					.addComponent(btnLschen)
 					.addGap(102))
 		);
